@@ -11,16 +11,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.Random;
 
 public class subtractionactivity extends AppCompatActivity {
-    TextView tvNum1, tvNum2, tvAns, tvResult;
+    TextView tvNum5, tvNum6, tvAns, tvResult;
     Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mathsgameappliction);
+        setContentView(R.layout.mathsubtraction);
 
-        tvNum1 = findViewById(R.id.tv_num_3);
-        tvNum2 = findViewById(R.id.tv_num_4);
+        tvNum5 = findViewById(R.id.tv_num_7);
+        tvNum6 = findViewById(R.id.tv_num_8);
         tvAns = findViewById(R.id.tv_ans);
         tvResult = findViewById(R.id.tv_result);
         button = findViewById(R.id.button_home);
@@ -47,8 +47,8 @@ public class subtractionactivity extends AppCompatActivity {
         int num1 = myRandom.nextInt(101);
         int num2 = myRandom.nextInt(101);
 
-        tvNum1.setText(""+num1);
-        tvNum2.setText(""+num2);
+        tvNum5.setText(""+num1);
+        tvNum6.setText(""+num2);
 
         tvAns.setText("");
         tvResult.setText("");
@@ -104,9 +104,9 @@ public class subtractionactivity extends AppCompatActivity {
     }
 
     public void submit(View view) {
-        int num1 = Integer.parseInt(tvNum1.getText().toString());
-        int num2 = Integer.parseInt(tvNum2.getText().toString());
-        int ans = num1 + num2;
+        int num1 = Integer.parseInt(tvNum5.getText().toString());
+        int num2 = Integer.parseInt(tvNum6.getText().toString());
+        int ans = num1 - num2;
 
         int get_user_ans = Integer.parseInt(tvAns.getText().toString());
 

@@ -10,17 +10,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
-public class multiplicationactivity extends AppCompatActivity {
-    TextView tvNum3, tvNum4, tvAns1, tvResult1;
+public class divisionactivity extends AppCompatActivity {
+    TextView tvNum7, tvNum8, tvAns1, tvResult1;
     Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.multiplicationactivity);
+        setContentView(R.layout.divisonactivity);
 
-        tvNum3 = findViewById(R.id.tv_num_3);
-        tvNum4 = findViewById(R.id.tv_num_4);
+        tvNum7 = findViewById(R.id.tv_num_7);
+        tvNum8 = findViewById(R.id.tv_num_8);
         tvAns1 = findViewById(R.id.tv_ans);
         tvResult1 = findViewById(R.id.tv_result);
         button1 = findViewById(R.id.button_home1);
@@ -49,8 +49,8 @@ public class multiplicationactivity extends AppCompatActivity {
         int num1 = myRandom.nextInt(101);
         int num2 = myRandom.nextInt(101);
 
-        tvNum3.setText(""+num1);
-        tvNum4.setText(""+num2);
+        tvNum7.setText(""+num1);
+        tvNum8.setText(""+num2);
 
         tvAns1.setText("");
         tvResult1.setText("");
@@ -107,9 +107,9 @@ public class multiplicationactivity extends AppCompatActivity {
     }
 
     public void submit(View view) {
-        int num1 = Integer.parseInt(tvNum3.getText().toString());
-        int num2 = Integer.parseInt(tvNum4.getText().toString());
-        int ans = num1*num2;
+        int num1 = Integer.parseInt(tvNum7.getText().toString());
+        int num2 = Integer.parseInt(tvNum8.getText().toString());
+        int ans = num1/num2;
 
         int get_user_ans = Integer.parseInt(tvAns1.getText().toString());
 

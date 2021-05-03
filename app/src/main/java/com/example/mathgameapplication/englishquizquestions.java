@@ -7,21 +7,23 @@ public class englishquizquestions {
             "What country did Romeo and Juliet come from?",
             "What is the missing word, I am going to ..... in my car .",
             "The horse ran out of ....... stable? .",
-            "How many letters are there in the alphabet."
+            "How many letters are there in the alphabet.",
+            "QUIZ OVER."
 
     };
 
 
     private String mChoices [][] = {
-            {"Italy ", "England", "China"},
+            {"Italy", "England", "China"},
             {"Walk", "Drive", "Paddle"},
-            {"Its", "its", "it is "},
-            {"20", "15", "26"}
+            {"Its", "it was", "it is "},
+            {"20", "15", "26"},
+            {" ", " ", " "},
     };
 
 
 
-    private String mCorrectAnswers[] = {"Italy", "Drive", "its", "26"};
+    private String mCorrectAnswers[] = {"Italy", "Drive", "Its", "26"," "};
 
 
 
